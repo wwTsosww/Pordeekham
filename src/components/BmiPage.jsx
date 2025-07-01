@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserDataContext } from '../context/UserDataContext';
-import '../styles/Bmi_page.css';
+import '../styles/BmiPage.css';
 
 function Bmi_page() {
   const [gender, setGender] = useState('');
