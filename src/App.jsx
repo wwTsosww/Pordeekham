@@ -5,11 +5,11 @@ import HomePage from './components/HomePage';
 import BmiLevelPage from './components/BmiLevelPage';
 import TdeePage from './components/TdeePage';
 
-import { UserDataProvider } from './context/UserDataContext'; // ✅ import provider
+import { UserDataProvider } from './context/UserDataContext';
 
 function App() {
   return (
-    <UserDataProvider> {/* ✅ ครอบทุกหน้า */}
+    <UserDataProvider>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bmi" element={<BmiPage />} />
