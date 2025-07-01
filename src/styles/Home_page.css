@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background-home {
+  background-image: url('../assets/cover_background.jpg');
+  background-size: cover;      
+  background-position: center;
+  min-height: 100vh;
+}
+
+.main-box{  
+  margin: 0 auto;
+}
+
+.logo{
+  background-image: url('../assets/cover_logo.png');
+  width: 250pt;
+  height: 250pt;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+}
+
+.secon-box1{
+  background-color: #d2eaf6;
+  border-radius: 50px;
+  width: 600pt;
+  height: 267pt;
+  margin: 0 auto;
+}
+
+.title-box{
+  width: 200pt;
+  margin: 0 auto;
+}
+
+.title-text{
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.welcome-box{
+  margin: 0 auto;
+}
+
+.welcome-text{
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 100;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.button-box-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button-text-home {
+  background-color: #b6e3e9;
+  color: white;
+  padding: 20px 250px;
+  border: none;
+  border-radius: 30px;
+  font-size: 38px;
+  cursor: pointer;        
+  transition: 0.3s ease;
+}
+
+.button-text:hover {
+  background-color: #50c1cc; 
+}
+
+.account-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.account-text {
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0;
+}

@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  background-image: url('../assets/background_content.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.main-box{  
+  margin: 0 auto;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button-text {
+  background-color: #f6836c;
+  color: white;
+  padding: 18px 150px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 100px;
+  font-size: 34px;
+  cursor: pointer;        
+  transition: 0.3s ease;
+}
+
+.button-text:hover {
+  background-color: #c9391c; 
+}
+
+.button-box2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
