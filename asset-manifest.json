@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pordeekham/static/css/main.f855e6bc.css",
+    "main.js": "/pordeekham/static/js/main.e969005f.js",
+    "static/js/453.06b053b7.chunk.js": "/pordeekham/static/js/453.06b053b7.chunk.js",
+    "static/media/logo.svg": "/pordeekham/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pordeekham/index.html",
+    "main.f855e6bc.css.map": "/pordeekham/static/css/main.f855e6bc.css.map",
+    "main.e969005f.js.map": "/pordeekham/static/js/main.e969005f.js.map",
+    "453.06b053b7.chunk.js.map": "/pordeekham/static/js/453.06b053b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.e969005f.js"
+  ]
+}
