@@ -1,0 +1,20 @@
+.nutrient-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.nutrient-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.nutrient-card img {
+  width: 100px;
+  height: auto;
+}

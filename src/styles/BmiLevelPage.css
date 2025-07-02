@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  background-image: url('../assets/background_content.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bmi-result-box {
+  padding: 20px 40px;
+  border-radius: 16px;
+}
+
+.bmi-image {
+  max-width: 180px;
+  height: auto;
+  margin: 20px 0;
+}

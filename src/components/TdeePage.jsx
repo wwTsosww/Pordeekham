@@ -31,7 +31,6 @@ function TDEE_page() {
     } else if (gender === 'ชาย') {
       bmrValue = 66 + (13.7 * w) + (5 * h) - (6.8 * a);
     } else {
-      // เพศอื่นใช้ค่าเฉลี่ย
       bmrValue = ((665 + 66) / 2) + ((9.6 + 13.7) / 2) * w + ((1.9 + 5) / 2) * h - ((4.7 + 6.8) / 2) * a;
     }
 
@@ -46,8 +45,12 @@ function TDEE_page() {
     setTdee(bmrValue * multiplier);
   };
 
+  const goToNutrientPage = () => {
+    navigate('/nutrient', { state: { bmr, tdee } });
+  };
+
   return (
-    <div className="background">
+    <div className="background center-container">
       <h1>คำนวณ BMR และ TDEE</h1>
       <p><strong>เพศ:</strong> {gender}</p>
       <p><strong>อายุ:</strong> {age}</p>
@@ -73,6 +76,7 @@ function TDEE_page() {
         <div>
           <h3>BMR ของคุณคือ: {bmr.toFixed(2)} kcal</h3>
           <h3>TDEE ของคุณคือ: {tdee.toFixed(2)} kcal</h3>
+          <button onClick={goToNutrientPage}>ถัดไป: ดูสารอาหาร</button>
         </div>
       )}
     </div>
