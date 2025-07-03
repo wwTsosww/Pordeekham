@@ -70,13 +70,13 @@ function TDEE_page() {
       </label>
 
       <br />
-      <button onClick={calculateBMR} disabled={!activity}>คำนวณ</button>
+      <button onClick={calculateBMR} disabled={!activity} className="next-button">คำนวณ</button>
 
       {bmr !== null && (
         <div>
           <h3>BMR ของคุณคือ: {bmr.toFixed(2)} kcal</h3>
           <h3>TDEE ของคุณคือ: {tdee.toFixed(2)} kcal</h3>
-          <button onClick={goToNutrientPage}>ถัดไป: ดูสารอาหาร</button>
+          <button onClick={goToNutrientPage} className="next-button">ถัดไป: ดูสารอาหาร</button>
         </div>
       )}
     </div>

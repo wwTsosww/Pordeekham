@@ -19,13 +19,13 @@ function Bmi_page() {
     if (w > 0 && h > 0) {
       const bmi = w / Math.pow(h / 100, 2);
       setBmiResult(bmi);
-      setUserData({ gender, age, weight, height, bmi }); // <== บันทึกข้อมูล
+      setUserData({ gender, age, weight, height, bmi });
     }
   };
 
   const handleEvaluate = () => {
     if (bmiResult !== null) {
-      navigate('/bmi-level'); // <== ไม่ต้องส่ง state
+      navigate('/bmi-level');
     }
   };
 
@@ -35,9 +35,11 @@ function Bmi_page() {
         <h1 className='body-text'>ข้อมูลร่างกาย</h1>
       </div>
       <div className='bmi-box'>
+        
         <form onSubmit={handleSubmit} className="bmi-informetion">
-          {/* เพศ */}
-          <label className='informetion-box'>
+          <h2 className="section-title">คำนวณ BMI</h2>
+          <div className='gg'>
+          <label className='informetion-box'> 
             <h1 className='informetion-text'>เพศ</h1>
             <select value={gender} onChange={(e) => setGender(e.target.value)} required>
               <option value="">-- เลือกเพศ --</option>
@@ -46,25 +48,19 @@ function Bmi_page() {
               <option value="อื่นๆ">อื่นๆ</option>
             </select>
           </label>
-          <br />
-          {/* อายุ */}
           <label className='informetion-box'>
             <h1 className='informetion-text'>อายุ</h1>
             <input type="number" value={age} onChange={(e) => setAge(e.target.value)} required />
           </label>
-          <br />
-          {/* น้ำหนัก */}
           <label className='informetion-box'>
             <h1 className='informetion-text'>น้ำหนัก (kg)</h1>
             <input type="number" value={weight} onChange={(e) => setWeight(e.target.value)} required />
           </label>
-          <br />
-          {/* ส่วนสูง */}
           <label className='informetion-box'>
             <h1 className='informetion-text'>ส่วนสูง (cm)</h1>
             <input type="number" value={height} onChange={(e) => setHeight(e.target.value)} required />
           </label>
-          <br />
+          </div>
           <button type="submit">คำนวณ</button>
         </form>
 
@@ -72,12 +68,14 @@ function Bmi_page() {
           {bmiResult !== null && (
             <div className="section-box">
               <h2 className="section-title">ผลลัพธ์ BMI</h2>
-              <div className="result-group"><strong>เพศ:</strong> {gender}</div>
-              <div className="result-group"><strong>อายุ:</strong> {age}</div>
-              <div className="result-group"><strong>น้ำหนัก:</strong> {weight} kg</div>
-              <div className="result-group"><strong>ส่วนสูง:</strong> {height} cm</div>
-              <div className="result-group"><strong>BMI:</strong> {bmiResult.toFixed(2)}</div>
-              <button onClick={handleEvaluate}>ถัดไป</button>
+              <div className='gg'>
+                <div className="result-group"><strong>เพศ:</strong> {gender}</div>
+                <div className="result-group"><strong>อายุ:</strong> {age}</div>
+                <div className="result-group"><strong>น้ำหนัก:</strong> {weight} kg</div>
+                <div className="result-group"><strong>ส่วนสูง:</strong> {height} cm</div>
+                <div className="result-group"><strong>BMI:</strong> {bmiResult.toFixed(2)}</div>
+              </div>
+              <button onClick={handleEvaluate} className="next-button">ถัดไป</button>
             </div>
           )}
         </div>

@@ -39,7 +39,7 @@ function Bmi_level_page() {
         <img src={imagePath} alt={level} className="bmi-image" />
         <h2>BMI: {bmi?.toFixed(2)}</h2>
         <h3>ระดับ: {level}</h3>
-        <button onClick={goToTDEE}>ถัดไป: คำนวณ TDEE</button>
+        <button onClick={goToTDEE} className="next-button">ถัดไป: คำนวณ TDEE</button>
       </div>
     </div>
   );
