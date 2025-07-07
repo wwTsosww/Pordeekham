@@ -8,7 +8,10 @@ export const UserDataProvider = ({ children }) => {
     age: '',
     weight: '',
     height: '',
+    activity: '',
     bmi: null,
+    bmr: null,
+    tdee: null
   });
 
   return (

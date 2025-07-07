@@ -1,10 +1,12 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { UserDataContext } from '../context/UserDataContext';
 import { useNavigate } from 'react-router-dom';
 import '../styles/BmiPage.css';
 
 function BmiPage() {
   const navigate = useNavigate();
+  const { setUserData, userData } = useContext(UserDataContext);
+
   const [gender, setGender] = useState('');
   const [age, setAge] = useState('');
   const [weight, setWeight] = useState('');
@@ -15,7 +17,18 @@ function BmiPage() {
   const [tdee, setTdee] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
 
-  const { setUserData } = useContext(UserDataContext);
+  useEffect(() => {
+    if (userData) {
+      setGender(userData.gender || '');
+      setAge(userData.age || '');
+      setWeight(userData.weight || '');
+      setHeight(userData.height || '');
+      setActivity(userData.activity || '');
+      setBmi(userData.bmi || null);
+      setBmr(userData.bmr || null);
+      setTdee(userData.tdee || null);
+    }
+  }, [userData]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,35 +59,48 @@ function BmiPage() {
       const tdeeValue = bmrValue * multiplier;
       setTdee(tdeeValue);
 
-      setUserData({ gender, age, weight, height, bmi: bmiValue, bmr: bmrValue, tdee: tdeeValue });
+      setUserData({ gender, age, weight, height, activity, bmi: bmiValue, bmr: bmrValue, tdee: tdeeValue });
 
       setShowPopup(true);
     }
   };
 
   let level = '';
-  let imagePath = '';
-  if (bmi !== null) {
-    if (bmi < 18.5) {
-      level = 'น้ำหนักต่ำกว่าเกณฑ์';
-      imagePath = require('../assets/bmi/18.PNG');
-    } else if (bmi < 22.9) {
-      level = 'น้ำหนักอยู่ในเกณฑ์ปกติ';
-      imagePath = require('../assets/bmi/22.PNG');
-    } else if (bmi < 24.9) {
-      level = 'น้ำหนักเกินเกณฑ์';
-      imagePath = require('../assets/bmi/24.PNG');
-    } else if (bmi < 34.9) {
-      level = 'ภาวะโรคอ้วน - Class I';
-      imagePath = require('../assets/bmi/34.PNG');
-    } else if (bmi < 39.9) {
-      level = 'ภาวะโรคอ้วน - Class II';
-      imagePath = require('../assets/bmi/39.PNG');
-    } else {
-      level = 'ภาวะโรคอ้วน - Class III';
-      imagePath = require('../assets/bmi/40.PNG');
-    }
+let imagePath = '';
+if (bmi !== null) {
+  let imageFile = '';
+  if (bmi < 18.5) {
+    level = 'น้ำหนักต่ำกว่าเกณฑ์';
+    imageFile = '18.PNG';
+  } else if (bmi < 22.9) {
+    level = 'น้ำหนักอยู่ในเกณฑ์ปกติ';
+    imageFile = '22.PNG';
+  } else if (bmi < 24.9) {
+    level = 'น้ำหนักเกินเกณฑ์';
+    imageFile = '24.PNG';
+  } else if (bmi < 34.9) {
+    level = 'ภาวะโรคอ้วน - Class I';
+    imageFile = '34.PNG';
+  } else if (bmi < 39.9) {
+    level = 'ภาวะโรคอ้วน - Class II';
+    imageFile = '39.PNG';
+  } else {
+    level = 'ภาวะโรคอ้วน - Class III';
+    imageFile = '40.PNG';
   }
+
+  const genderFolder =
+    gender === 'ชาย' ? 'male' :
+    gender === 'หญิง' ? 'female' :
+    'other'; // คุณสามารถสร้างโฟลเดอร์ other/ เพื่อกรณีไม่ระบุเพศ
+
+  try {
+    imagePath = require(`../assets/bmi/${genderFolder}/${imageFile}`);
+  } catch (err) {
+    imagePath = require(`../assets/bmi/${imageFile}`); // fallback
+  }
+}
+
   const goToNutrientPage = () => {
     navigate('/nutrient', { state: { bmr, tdee } });
   };
@@ -126,12 +152,13 @@ function BmiPage() {
               </select>
             </label>
           </div>
+
           <button type="submit">คำนวณ</button>
           {bmi !== null && (
-          <button type="button" onClick={goToNutrientPage} className="next-button" style={{ marginTop: '1rem' }}>
-          ถัดไป: ดูสารอาหาร
-          </button>
-            )}
+            <button type="button" onClick={goToNutrientPage} className="next-button" style={{ marginTop: '1rem' }}>
+              ถัดไป: ดูสารอาหาร
+            </button>
+          )}
         </form>
 
         {bmi !== null && (
@@ -158,12 +185,12 @@ function BmiPage() {
             <h1>ผลประเมินระดับ BMI</h1>
             <img src={imagePath} alt={level} className="bmi-image" />
             <h2>BMI: {bmi?.toFixed(2)}</h2>
+            <h3>ระดับ: {level}</h3>
             <button onClick={() => setShowPopup(false)} className="next-button">ปิด</button>
           </div>
         </div>
       )}
     </div>
-    
   );
 }
 

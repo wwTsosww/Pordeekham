@@ -1,8 +1,7 @@
-// App.jsx
 import { Routes, Route } from 'react-router-dom';
-import BmiPage from './components/BmiPage';
-import HomePage from './components/HomePage';
-import NutrientPage from './components/NutrientPage';
+import BmiPage from './pages/BmiPage';
+import HomePage from './pages/HomePage';
+import NutrientPage from './pages/NutrientPage';
 
 import { UserDataProvider } from './context/UserDataContext';
 
