@@ -1,17 +1,16 @@
-import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
-import '../styles/NutrientPage.css';
-import foodData from '../data/foodData';
-import { calcMacro } from '../utils/calc';
-import NutrientPopup from '../components/NutrientPopup';
-
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
+import "../styles/NutrientPage.css";
+import foodData from "../data/foodData";
+import { calcMacro } from "../utils/calc";
+import NutrientPopup from "../components/NutrientPopup";
 
 function NutrientPage() {
   const location = useLocation();
   const { bmr, tdee } = location.state || {};
 
   const [popupVisible, setPopupVisible] = useState(false);
-  const [selectedTab, setSelectedTab] = useState('protein');
+  const [selectedTab, setSelectedTab] = useState("protein");
   const [compareIndex, setCompareIndex] = useState(0);
 
   if (!bmr || !tdee) {
@@ -25,20 +24,37 @@ function NutrientPage() {
   };
 
   return (
-    <div className="background">
+    <div className="background-s">
       <h1>สัดส่วนพลังงานจากสารอาหาร</h1>
       <div className="nutrient-row">
-        {['protein', 'carb', 'fat'].map((type) => (
+        {["protein", "carb", "fat"].map((type) => (
           <div
             key={type}
             className="nutrient-card"
             onClick={() => openPopup(type)}
-            style={{ borderTop: `10px solid ${foodData[type].color}`, cursor: 'pointer' }}
+            style={{
+              borderTop: `10px solid ${foodData[type].color}`,
+              cursor: "pointer",
+            }}
           >
             <div className="nutrient-color-box"></div>
             <h3>{foodData[type].title}</h3>
-            <p>BMR: {calcMacro(bmr, type === 'protein' ? 30 : type === 'carb' ? 55 : 15)} kcal</p>
-            <p>TDEE: {calcMacro(tdee, type === 'protein' ? 30 : type === 'carb' ? 55 : 15)} kcal</p>
+            <p>
+              BMR:{" "}
+              {calcMacro(
+                bmr,
+                type === "protein" ? 30 : type === "carb" ? 55 : 15
+              )}{" "}
+              kcal
+            </p>
+            <p>
+              TDEE:{" "}
+              {calcMacro(
+                tdee,
+                type === "protein" ? 30 : type === "carb" ? 55 : 15
+              )}{" "}
+              kcal
+            </p>
           </div>
         ))}
       </div>
