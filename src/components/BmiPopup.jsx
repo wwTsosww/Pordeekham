@@ -5,7 +5,6 @@ function BmiPopup({ bmi, level, imagePath, onClose, onNext }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="contact-exit-button" onClick={onClose}>X</button>
         <h1>ผลประเมินระดับ BMI</h1>
         <img src={imagePath} alt={level} className="bmi-image" />
         <h2>BMI: {bmi?.toFixed(2)}</h2>
