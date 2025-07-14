@@ -1,4 +1,3 @@
-// src/hooks/useBmiForm.js
 import { useState, useEffect } from "react";
 import {
   calculateBmi,

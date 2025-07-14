@@ -33,10 +33,9 @@
   align-items: flex-start;
   margin: 0 auto;
   max-width: 850px;
-  max-height: 850px;
-  height: 100px;
-  width: 5000px;
+  width: 100%;
   gap: 10px;
+  margin-top: -15px;
 }
 
 /* กล่องกรอกข้อมูล (ด้านซ้าย) */
@@ -53,10 +52,11 @@
 
 /* กล่องสีชมพูแดง */
 .gg {
+  display: flex;
+  flex-direction: column;
   background-color: #995355;
   border-radius: 12px;
   padding: 1.5rem;
-  flex-direction: column;
   gap: 6px;
 }
 
@@ -91,6 +91,35 @@ button.next-button {
   transition: background-color 0.3s ease;
 }
 
+button.next-button-1 {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: #995355;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: 80px;
+}
+
+button.next-button-2 {
+  display: block;           /* ต้องมี block-level */
+  margin-left: 90%;  
+  padding: 12px 24px;
+  background-color: #995355;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+}
+
 button[type="submit"]:hover,
 button.next-button:hover {
   background-color: #a86666;
@@ -106,6 +135,9 @@ button.next-button:hover {
 
 /* กล่องภายในผลลัพธ์ */
 .section-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   padding: 1rem;
   border-radius: 12px;
   width: 100%;
@@ -118,6 +150,7 @@ button.next-button:hover {
   border-radius: 8px;
   font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* กล่องแสดงค่าแต่ละตัว */

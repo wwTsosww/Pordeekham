@@ -1,5 +1,3 @@
-// src/utils/bmiUtils.js
-
 export function calculateBmi(weight, height) {
   return weight / Math.pow(height / 100, 2);
 }

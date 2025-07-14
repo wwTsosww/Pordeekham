@@ -119,47 +119,54 @@ function BmiPage() {
           {bmi !== null && (
             <button
               type="button"
-              onClick={goToNutrientPage}
-              className="next-button"
-              style={{ marginTop: "1rem" }}
+              onClick={() => setShowBMR(true)}
+              className="next-button-1"
             >
-              ถัดไป
+              BMR
             </button>
           )}
         </form>
 
         {bmi !== null && (
           <div className="bmi-result">
-            <div className="section-box">
-              <h2 className="section-title">ผลลัพธ์</h2>
-              <div className="gg">
-                <div className="result-group">
-                  <strong>เพศ:</strong> {gender}
-                </div>
-                <div className="result-group">
-                  <strong>อายุ:</strong> {age}
-                </div>
-                <div className="result-group">
-                  <strong>น้ำหนัก:</strong> {weight} kg
-                </div>
-                <div className="result-group">
-                  <strong>ส่วนสูง:</strong> {height} cm
-                </div>
-                <div className="result-group">
-                  <strong>BMI:</strong> {bmi.toFixed(2)}
-                </div>
-                <div className="result-group">
-                  <strong>BMR:</strong> {bmr.toFixed(2)} kcal
-                </div>
-                <div className="result-group">
-                  <strong>TDEE:</strong> {tdee.toFixed(2)} kcal
-                </div>
+            <h2 className="section-title">ผลลัพธ์</h2>
+
+            <div className="gg">
+              <div className="result-group">
+                <strong>เพศ:</strong> {gender}
+              </div>
+              <div className="result-group">
+                <strong>อายุ:</strong> {age}
+              </div>
+              <div className="result-group">
+                <strong>น้ำหนัก:</strong> {weight} kg
+              </div>
+              <div className="result-group">
+                <strong>ส่วนสูง:</strong> {height} cm
+              </div>
+              <div className="result-group">
+                <strong>BMI:</strong> {bmi.toFixed(2)}
+              </div>
+              <div className="result-group">
+                <strong>BMR:</strong> {bmr.toFixed(2)} kcal
+              </div>
+              <div className="result-group">
+                <strong>TDEE:</strong> {tdee.toFixed(2)} kcal
               </div>
             </div>
           </div>
         )}
         {showBMR && <BMR onClose={() => setShowBMR(false)} />}
       </div>
+      {bmi !== null && (
+              <button
+                type="button"
+                onClick={goToNutrientPage}
+                className="next-button-2"
+              >
+                ถัดไป
+              </button>
+            )}
 
       {showPopup && (
         <BmiPopup
