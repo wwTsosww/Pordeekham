@@ -5,6 +5,7 @@ import { useBmiForm } from "../hooks/useBmiForm";
 import "../styles/BmiPage.css";
 import BmiPopup from "../components/BmiPopup";
 import BMR from "../components/BMR";
+import BBmi from "../components/BBmi";
 
 function BmiPage() {
   const { setUserData, userData } = useContext(UserDataContext);
@@ -35,6 +36,14 @@ function BmiPage() {
     navigate("/nutrient", { state: { bmr, tdee } });
   };
   const [showBMR, setShowBMR] = useState(false);
+  const [showBBmi, setShowBBmi] = useState(false);
+
+  const handlePopupNext = () => {
+  setShowPopup(false);       // ปิด popup แรก
+  setTimeout(() => {
+    setShowBBmi(true);       // รอจนปิดก่อนแล้วค่อยเปิดอันใหม่
+  }, 100);                   // delay สั้นๆ ป้องกันซ้อน
+};
 
   return (
     <div className="background">
@@ -158,6 +167,7 @@ function BmiPage() {
           </div>
         )}
         {showBMR && <BMR onClose={() => setShowBMR(false)} />}
+        {showBBmi && <BBmi onClose={() => setShowBBmi(false)} />}
       </div>
       {bmi !== null && (
               <button
@@ -175,6 +185,7 @@ function BmiPage() {
           level={level}
           imagePath={imagePath}
           onClose={() => setShowPopup(false)}
+          onNext={handlePopupNext}
         />
       )}
     </div>
