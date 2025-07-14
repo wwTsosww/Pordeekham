@@ -124,7 +124,6 @@
   height: 18%;
   border: none;
   border-radius: 30px;
-  cursor: pointer;
 }
 
 .BMR-box-details {
@@ -138,4 +137,17 @@
   font-size: 38px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+
+.credits-title-1 {
+  background-color: #ebf051;
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 5px;
 }

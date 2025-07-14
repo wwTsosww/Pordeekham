@@ -44,16 +44,7 @@ function BMR({ onClose }) {
           </div>
         </div>
 
-        <div
-          className="end-text"
-          onClick={() =>
-            window.open(
-              "https://nutrilite.co.th/th/article/what-is-bmr#:~:text=...",
-              "_blank"
-            )
-          }
-          style={{ cursor: "pointer" }}
-        >
+        <div className="end-text">
           <h>
             หากต้องการลดน้ำหนัก
             แนะนำให้ลดปริมาณพลังงานให้น้อยกว่าที่ร่างกายใช้วันละ
@@ -67,6 +58,18 @@ function BMR({ onClose }) {
             เมื่อร่างกายเรียนรู้ว่าได้รับพลังงานน้อยมาก ก็จะไม่ยอมใช้
           </h>
           <h>พลังงานตามปกติ อาจส่งผลต่อระบบเผาผลาญ</h>
+        </div>
+        <div
+          className="credits-title-box"
+          onClick={() =>
+            window.open(
+              "https://nutrilite.co.th/th/article/what-is-bmr#:~:text=...",
+              "_blank"
+            )
+          }
+          style={{ cursor: "pointer" }}
+        >
+          <h className="credits-title-1">เพิ่มเติม</h>
         </div>
       </div>
     </div>
