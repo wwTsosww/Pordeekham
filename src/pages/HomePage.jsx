@@ -25,7 +25,7 @@ function Home_page() {
           </div>
           <div className="welcome-box">
             <h1 className="welcome-text">
-              ยินดีต้อนรับเข้าสู่การรับประทานอาหารอย่างมีประโยชน์
+              กินดีทุกวัน แข็งแรงทุกวัย
             </h1>
           </div>
           <div className="button-box-home">

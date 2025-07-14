@@ -194,3 +194,11 @@ button.next-button:hover {
 .swap-buttons button:hover {
   background-color: #a86666;
 }
+
+.nutrient-image {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin: 10px auto;
+  display: block;
+}
