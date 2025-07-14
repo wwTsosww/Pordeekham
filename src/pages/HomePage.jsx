@@ -41,9 +41,6 @@ function Home_page() {
               ติดต่อสอบถาม
             </button>
           </div>
-          <button onClick={() => setShowBMR(true)} className="button-b">
-            BMR
-          </button>
         </div>
       </div>
       {showContact && <Contact onClose={() => setShowContact(false)} />}

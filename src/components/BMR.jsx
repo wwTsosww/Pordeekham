@@ -21,7 +21,7 @@ function BMR({ onClose }) {
           <div className="hyper-box">
             <img
               className="BMR-doc"
-              src={`${process.env.PUBLIC_URL}/images/doc/nurse.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/food_data/logo/nurse.PNG`}
               alt="doc"
             ></img>
             <div className="BMR-box">

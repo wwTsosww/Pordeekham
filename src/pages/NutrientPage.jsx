@@ -24,8 +24,8 @@ function NutrientPage() {
   };
 
   return (
-    <div className="background-s">
-      <h1>สัดส่วนพลังงานจากสารอาหาร</h1>
+    <div className="nutrient-background">
+      <h1 className="nutrient-title">สัดส่วนพลังงานจากสารอาหาร</h1>
       <div className="nutrient-row">
         {["protein", "carb", "fat"].map((type) => (
           <div
@@ -38,6 +38,13 @@ function NutrientPage() {
             }}
           >
             <div className="nutrient-color-box"></div>
+
+            <img
+              src={`${process.env.PUBLIC_URL}${foodData[type].image}`}
+              alt={foodData[type].title}
+              className="nutrient-image"
+            />
+
             <h3>{foodData[type].title}</h3>
             <p>
               BMR:{" "}

@@ -114,9 +114,6 @@ function BmiPage() {
               </select>
             </label>
           </div>
-          <button onClick={() => setShowBMR(true)} className="button-b">
-            BMR
-          </button>
 
           <button type="submit">คำนวณ</button>
           {bmi !== null && (
@@ -126,7 +123,7 @@ function BmiPage() {
               className="next-button"
               style={{ marginTop: "1rem" }}
             >
-              ถัดไป: ดูสารอาหาร
+              ถัดไป
             </button>
           )}
         </form>

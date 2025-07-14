@@ -1,3 +1,4 @@
+/* พื้นหลังรวม */
 .background {
   background-image: url("../assets/background_content.jpg");
   background-size: cover;
@@ -5,6 +6,7 @@
   min-height: 100vh;
 }
 
+/* หัวข้อ "ข้อมูลร่างกาย" */
 .body-box {
   display: flex;
   justify-content: center;
@@ -24,25 +26,20 @@
   justify-content: center;
 }
 
+/* กล่องใหญ่ทั้งหมด (ซ้าย-ขวา) */
 .bmi-box {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 0 auto;
   max-width: 850px;
-  width: 100%;
-  gap: 2rem;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-}
-.gg {
-  background-color: #995355;
-  border-radius: 12px;
-  padding: 1.5rem;
-  flex-direction: column;
-  gap: 6px;
+  max-height: 850px;
+  height: 100px;
+  width: 5000px;
+  gap: 10px;
 }
 
+/* กล่องกรอกข้อมูล (ด้านซ้าย) */
 .bmi-informetion {
   display: flex;
   flex-direction: column;
@@ -54,6 +51,16 @@
   width: 100%;
 }
 
+/* กล่องสีชมพูแดง */
+.gg {
+  background-color: #995355;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* กล่อง field input แต่ละแถว */
 .informetion-box {
   display: flex;
   align-items: center;
@@ -69,56 +76,7 @@
   margin: 0;
 }
 
-.bmi-result {
-  flex: 1;
-  padding: 1rem;
-  box-sizing: border-box;
-  max-width: 400px;
-  width: 100%;
-}
-
-.section-box {
-  padding: 1rem;
-  border-radius: 12px;
-  width: 100%;
-}
-
-.section-title {
-  background-color: #995355;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.input-group,
-.result-group {
-  background: #fdfdfd;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-input[type="number"],
-select {
-  padding: 6px 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  background-color: #fdfdfd;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-  max-width: 140px;
-  box-sizing: border-box;
-}
-
-input[type="number"]:focus,
-select:focus {
-  outline: none;
-  border: 1px solid #995355;
-  box-shadow: 0 0 6px rgba(153, 83, 85, 0.4);
-}
-
+/* ปุ่ม */
 button[type="submit"],
 button.next-button {
   margin-top: 1rem;
@@ -138,6 +96,60 @@ button.next-button:hover {
   background-color: #a86666;
 }
 
+/* กล่องแสดงผล (ด้านขวา) */
+.bmi-result {
+  padding: 1rem;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* กล่องภายในผลลัพธ์ */
+.section-box {
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.section-title {
+  background-color: #995355;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* กล่องแสดงค่าแต่ละตัว */
+.result-group,
+.input-group {
+  background: #fdfdfd;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* ฟอร์มอินพุต */
+input[type="number"],
+select {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  max-width: 140px;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #995355;
+  box-shadow: 0 0 6px rgba(153, 83, 85, 0.4);
+}
+
+/* popup ที่แสดงผล BMI */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -178,6 +190,7 @@ button.next-button:hover {
   margin: 1rem 0;
 }
 
+/* เอ็ฟเฟกต์แสดง popup */
 @keyframes fadeIn {
   from {
     transform: translateY(-20px);

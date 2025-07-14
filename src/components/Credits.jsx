@@ -14,10 +14,10 @@ function Credits({ onClose }) {
           <div className="member-details">
             <img
               className="member-img"
-              src={`${process.env.PUBLIC_URL}/images/member/toprathap_thurarat.png`}
-              alt="นพอ.กอปรทรัพย์ ธุรารัตน์"
+              src={`${process.env.PUBLIC_URL}/images/member/naphatchanon_meesukmak.png`}
+              alt="น.ต.ณภัทรชนม์ มีสุขมาก"
             ></img>
-            <h1>นพอ.กอปรทรัพย์ ธุรารัตน์</h1>
+            <h1>น.ต.ณภัทรชนม์ มีสุขมาก</h1>
           </div>
         </div>
 

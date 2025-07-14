@@ -5,13 +5,24 @@ body {
   height: 100%;
 }
 
-.background-s {
+.nutrient-background {
   background-image: url("../assets/background_content.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.nutrient-title{
+  background-color: #995355;
+  color: white;
+  padding: 10px 200px;
+  border: none;
+  border-radius: 30px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
 }
 .nutrient-row {
   display: flex;
