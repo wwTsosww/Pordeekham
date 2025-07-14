@@ -124,6 +124,7 @@
   height: 18%;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .BMR-box-details {

@@ -122,7 +122,7 @@ function BmiPage() {
               onClick={() => setShowBMR(true)}
               className="next-button-1"
             >
-              BMR
+              คำอธิบายเกณฑ์
             </button>
           )}
         </form>
