@@ -115,12 +115,13 @@ function BmiPage() {
             </label>
           </div>
 
-          <button type="submit">คำนวณ</button>
+          <button className="bmi-button-0">คำนวณ</button>
+          
           {bmi !== null && (
             <button
               type="button"
               onClick={() => setShowBMR(true)}
-              className="next-button-1"
+              className="bmi-button-1"
             >
               คำอธิบายเกณฑ์
             </button>
@@ -162,7 +163,7 @@ function BmiPage() {
               <button
                 type="button"
                 onClick={goToNutrientPage}
-                className="next-button-2"
+                className="bmi-button-2"
               >
                 ถัดไป
               </button>

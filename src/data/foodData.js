@@ -117,7 +117,7 @@ const foodData = {
   fat: {
     title: "ไขมัน",
     color: "#f27d72",
-    image: "/images/food_data/logo/ki.png",
+    image: "/images/food_data/logo/ki.PNG",
     base: {
       name: "น้ำมันพืช 1 ช้อนชา",
       image: "/images/oil.png",

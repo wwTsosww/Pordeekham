@@ -25,7 +25,7 @@ function NutrientPage() {
 
   return (
     <div className="nutrient-background">
-      <h1 className="nutrient-title">สัดส่วนพลังงานจากสารอาหาร</h1>
+      <h1 className="nutrient-title">สัดส่วนพลังงานจากสารอาหาร (ต่อวัน)</h1>
       <div className="nutrient-row">
         {["protein", "carb", "fat"].map((type) => (
           <div
