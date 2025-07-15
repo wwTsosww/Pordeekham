@@ -12,8 +12,8 @@ function Contact({ onClose }) {
           <div className="contact-second-box1"></div>
         </div>
         <div className="contact-details">
-          <h1 className="contact-box">เบอร์ รพ.</h1>
-          <h1 className="contact-mobile">087-654-3210</h1>
+          <h1 className="contact-box">ห้องตรวจโภชนบำบัด โทร.</h1>
+          <h1 className="contact-mobile">02-534-7504</h1>
         </div>
       </div>
     </div>
