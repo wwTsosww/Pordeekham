@@ -114,24 +114,40 @@ const foodData = {
       },
     ],
   },
-  fat: {
-    title: "ไขมัน",
-    color: "#f27d72",
-    image: "/images/food_data/logo/ki.PNG",
-    base: {
-      name: "น้ำมันพืช 1 ช้อนชา",
-      image: "/images/oil.png",
-      energy: "1 ไขมัน",
-    },
-    compare: [
-      { name: "เนย 1 ช้อนชา", image: "/images/butter.png", energy: "1 ไขมัน" },
-      {
-        name: "อะโวคาโด 1/8 ผล",
-        image: "/images/avocado.png",
-        energy: "1 ไขมัน",
-      },
-    ],
+fat: {
+  title: "ไขมัน",
+  color: "#f27d72",
+  image: "/images/food_data/logo/ki.PNG",
+  base: {
+    name: "น้ำมันพืช 1 ช้อนชา",
+    image: "/images/oil.png",
+    energy: "1 ไขมัน",
   },
+  mono: [ // ไขมันอิ่มตัวเชิงเดี่ยว
+    { name: "น้ำมันมะกอก", image: "/images/fat/olive_oil.jpg", energy: "1 ไขมัน" },
+    { name: "อะโวคาโด", image: "/images/fat/avocado.jpg", energy: "1 ไขมัน" },
+    { name: "ถั่วลิสง", image: "/images/fat/peanuts.jpg", energy: "1 ไขมัน" },
+    { name: "อัลมอนด์", image: "/images/fat/almond.jpg", energy: "1 ไขมัน" }
+  ],
+  poly: [ // ไขมันอิ่มตัวเชิงซ้อน
+    { name: "น้ำมันดอกทานตะวัน", image: "/images/fat/sunflower_oil.jpg", energy: "1 ไขมัน" },
+    { name: "น้ำมันถั่วเหลือง", image: "/images/fat/soybean_oil.jpg", energy: "1 ไขมัน" },
+    { name: "วอลนัท", image: "/images/fat/walnut.jpg", energy: "1 ไขมัน" },
+    { name: "ปลาแซลมอน", image: "/images/fat/salmon.jpg", energy: "1 ไขมัน" }
+  ],
+  saturated: [ // ไขมันอิ่มตัว
+    { name: "เนย", image: "/images/fat/butter.jpg", energy: "1 ไขมัน" },
+    { name: "กะทิ", image: "/images/fat/coconut_milk.jpg", energy: "1 ไขมัน" },
+    { name: "น้ำมันหมู", image: "/images/fat/lard.jpg", energy: "1 ไขมัน" },
+    { name: "เนื้อติดมัน", image: "/images/fat/fatty_meat.jpg", energy: "1 ไขมัน" }
+  ],
+  trans: [ // ไขมันทรานส์
+    { name: "มาการีน", image: "/images/fat/margarine.jpg", energy: "1 ไขมัน" },
+    { name: "ขนมอบสำเร็จรูป", image: "/images/fat/bakery.jpg", energy: "1 ไขมัน" },
+    { name: "มันฝรั่งทอด", image: "/images/fat/french_fries.jpg", energy: "1 ไขมัน" },
+    { name: "โดนัท", image: "/images/fat/donut.jpg", energy: "1 ไขมัน" }
+  ]
+}
 };
 
 export default foodData;

@@ -1,3 +1,6 @@
+/* ===========================
+   ✅ โครงสร้างหลัก Popup
+=========================== */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -16,56 +19,16 @@
   border-radius: 16px;
   padding: 20px 30px;
   width: 80%;
-  max-width: 700px;
+  max-width: 800px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.popup-tabs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-
-.popup-content-1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  width: 100%;
-}
-
-.popup-box {
-  flex: 1;
-  text-align: center;
-}
-
-.popup-box img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.popup-arrows {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  gap: 10px;
-}
-
-.popup-arrows button {
-  padding: 6px 12px;
-  font-size: 16px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.popup-close {
+/* ปุ่มปิด Popup */
+.popup-close-btn {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #995355;
@@ -74,4 +37,188 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.popup-close-btn:hover {
+  background-color: #a86666;
+}
+
+/* ===========================
+   ✅ Tabs ด้านบน
+=========================== */
+.popup-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.popup-tab {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.popup-tab.active.protein {
+  background-color: #a48eeb;
+  color: white;
+}
+.popup-tab.active.carb {
+  background-color: #e2b05e;
+  color: white;
+}
+.popup-tab.active.fat {
+  background-color: #f27d72;
+  color: white;
+}
+
+.popup-tab:hover {
+  background-color: #ddd;
+}
+
+/* ===========================
+   ✅ Layout โปรตีน / คาร์บ
+=========================== */
+.popup-content-compare {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+/* กล่องฝั่งซ้าย */
+.popup-box {
+  flex: 1;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* รูปอาหารฝั่งซ้าย */
+.popup-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* ฝั่งขวารูปใหญ่ */
+.popup-right-big img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ลูกศรซ้าย-ขวา */
+.popup-arrows-side {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.popup-arrows-side button {
+  padding: 8px 14px;
+  font-size: 18px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-arrows-side button:hover {
+  background-color: #bbb;
+}
+
+/* ===========================
+   ✅ Layout ไขมันพิเศษ
+=========================== */
+
+/* ส่วนหัวเรื่อง */
+.fat-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* สองฝั่ง HDL / LDL */
+.fat-two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+/* ฝั่งซ้าย-ขวา */
+.fat-side {
+  flex: 1;
+  background: #fdfdfd;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fat-side-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* กล่องประเภทไขมัน */
+.fat-category {
+  margin-bottom: 18px;
+}
+
+.fat-category h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Grid 4 รูป */
+.fat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* รูปไขมันแต่ละอัน */
+.fat-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fat-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.fat-item p {
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.fat-item small {
+  font-size: 12px;
+  color: #777;
 }
