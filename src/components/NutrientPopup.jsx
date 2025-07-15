@@ -25,13 +25,11 @@ function NutrientPopup({
 
   const isFirst = compareIndex === 0;
   const isLast =
-    hasCompare &&
-    compareIndex === foodData[selectedTab].compare.length - 1;
+    hasCompare && compareIndex === foodData[selectedTab].compare.length - 1;
 
   return (
     <div className="popup-overlay">
       <div className="popup-window">
-        {/* ✅ Tabs */}
         <div className="popup-tabs">
           {["protein", "carb", "fat"].map((type) => (
             <button
@@ -40,17 +38,17 @@ function NutrientPopup({
                 setSelectedTab(type);
                 setCompareIndex(0);
               }}
-              className={`popup-tab ${selectedTab === type ? "active" : ""} ${type}`}
+              className={`popup-tab ${
+                selectedTab === type ? "active" : ""
+              } ${type}`}
             >
               {foodData[type].title}
             </button>
           ))}
         </div>
 
-        {/* ✅ Protein / Carb Layout */}
         {hasCompare && (
           <div className="popup-content-compare">
-            {/* ฝั่งซ้าย: Base */}
             <div className="popup-box">
               <img
                 src={`${process.env.PUBLIC_URL}${foodData[selectedTab].base.image}`}
@@ -60,7 +58,6 @@ function NutrientPopup({
               <p>{foodData[selectedTab].base.energy}</p>
             </div>
 
-            {/* ฝั่งขวา: รูปใหญ่ + ลูกศร */}
             <div className="popup-box popup-right-big">
               <img
                 src={`${process.env.PUBLIC_URL}${foodData[selectedTab].compare[compareIndex].image}`}
@@ -69,14 +66,12 @@ function NutrientPopup({
               />
 
               <div className="popup-arrows-side">
-                {/* ปุ่มซ้าย โผล่เมื่อไม่ใช่รูปแรก */}
                 {!isFirst && (
                   <button className="arrow-btn left" onClick={handlePrev}>
                     ⬅
                   </button>
                 )}
 
-                {/* ปุ่มขวา โผล่จนกว่าจะถึงรูปสุดท้าย */}
                 {!isLast && (
                   <button className="arrow-btn right" onClick={handleNext}>
                     ➡
@@ -87,95 +82,90 @@ function NutrientPopup({
           </div>
         )}
 
-        {/* ✅ Fat Layout พิเศษ */}
         {selectedTab === "fat" && (
- <div className="popup-fat-layout">
-    <h3 className="fat-title">
-      ไขมัน 1 ส่วน = น้ำมันพืช 1 ช้อนชา (45 kcal)
-    </h3>
+          <div className="popup-fat-layout">
+            <div className="fat-title-box">
+              <h3 className="fat-title">
+                น้ำมัน 1 ส่วน = 1 ช้อนชา (โดยประมาณ) ไม่มีคาร์โบไฮเดรต และโปรตีน
+              </h3>
+              <h3 className="fat-title">
+                มีไขมัน 5 กรัม ให้พลังงาน 45 kcal (กิโลแคลอรี่)
+              </h3>
+            </div>
+            <div className="fat-two-column">
+              <div className="fat-side">
+                <h3 className="fat-side-title">ไขมันดี (HDL)</h3>
+                <h1 className="fat-side-title-1">Hight Density Lipoprotein</h1>
+                <p className="fat-side-desc">
+                  มีประโยชน์ต่อร่างกายทำหน้าที่กำจัดคอเลสเตอรอลชนิดไม่ดีที่สะสมอยู่ตามหลอดเลือด
+                  ลดความเสี่ยงโรคหัวใจ ภาวะกล้ามเนื้อหัวใจขาดเลือด
+                  และโรคหลอดเลือดหัวใจได้
+                </p>
 
-    <div className="fat-two-column">
-      {/* ✅ ฝั่งซ้าย HDL */}
-      <div className="fat-side">
-        <h3 className="fat-side-title">ไขมันดี (HDL)</h3>
-        <p className="fat-side-desc">
-          ไขมันดีช่วยลดคอเลสเตอรอลในเลือด ลดความเสี่ยงโรคหัวใจ
-          พบมากในน้ำมันพืชและถั่วต่างๆ
-        </p>
+                <div className="fat-category">
+                  <h4>ไขมันอิ่มตัวเชิงเดี่ยว</h4>
+                  <div className="fat-grid">
+                    {foodData.fat.mono.map((item, idx) => (
+                      <div key={idx} className="fat-item">
+                        <img
+                          src={`${process.env.PUBLIC_URL}${item.image}`}
+                          alt={item.name}
+                        />
+                        <p>{item.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-        {/* กล่องบน - Mono */}
-        <div className="fat-category">
-          <h4>ไขมันอิ่มตัวเชิงเดี่ยว</h4>
-          <div className="fat-grid">
-            {foodData.fat.mono.map((item, idx) => (
-              <div key={idx} className="fat-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}${item.image}`}
-                  alt={item.name}
-                />
-                <p>{item.name}</p>
-                <small>{item.energy}</small>
+                <div className="fat-category">
+                  <h4>ไขมันอิ่มตัวเชิงซ้อน</h4>
+                  <div className="fat-grid">
+                    {foodData.fat.poly.map((item, idx) => (
+                      <div key={idx} className="fat-item">
+                        <img
+                          src={`${process.env.PUBLIC_URL}${item.image}`}
+                          alt={item.name}
+                        />
+                        <p>{item.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* กล่องล่าง - Poly */}
-        <div className="fat-category">
-          <h4>ไขมันอิ่มตัวเชิงซ้อน</h4>
-          <div className="fat-grid">
-            {foodData.fat.poly.map((item, idx) => (
-              <div key={idx} className="fat-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}${item.image}`}
-                  alt={item.name}
-                />
-                <p>{item.name}</p>
-                <small>{item.energy}</small>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+              <div className="fat-side">
+                <h3 className="fat-side-title">ไขมันไม่ดี (LDL)</h3>
+                <h1 className="fat-side-title-1">Low Density Lipoprotein</h1>
+                <p className="fat-side-desc">
+                  หากสะสมมากจะทำให้เกิดตะกอนในหลอดเลือดซึ่งอาจส่งผลทำให้เลือดไปเลี้ยงหัวใจไม่เพียงพอเป็นสาเหตุทำให้เสียชีวิตกระทันหันหรือเป็นอัมพาตได้
+                </p>
 
-      {/* ✅ ฝั่งขวา LDL */}
-      <div className="fat-side">
-        <h3 className="fat-side-title">ไขมันเลว (LDL)</h3>
-        <p className="fat-side-desc">
-          ไขมันเลวเพิ่มความเสี่ยงการอุดตันหลอดเลือดและโรคหัวใจ
-          พบในเนื้อสัตว์ติดมัน เนย และของทอด
-        </p>
+                <div className="fat-category">
+                  <h4>ไขมันอิ่มตัว</h4>
+                  <div className="fat-grid">
+                    {foodData.fat.saturated.map((item, idx) => (
+                      <div key={idx} className="fat-item">
+                        <img
+                          src={`${process.env.PUBLIC_URL}${item.image}`}
+                          alt={item.name}
+                        />
+                        <p>{item.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-        {/* กล่องบน - Saturated */}
-        <div className="fat-category">
-          <h4>ไขมันอิ่มตัว</h4>
-          <div className="fat-grid">
-            {foodData.fat.saturated.map((item, idx) => (
-              <div key={idx} className="fat-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}${item.image}`}
-                  alt={item.name}
-                />
-                <p>{item.name}</p>
-                <small>{item.energy}</small>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* กล่องล่าง - Trans */}
-        <div className="fat-category">
-          <h4>ไขมันทรานส์</h4>
-          <div className="fat-grid">
-            {foodData.fat.trans.map((item, idx) => (
-              <div key={idx} className="fat-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}${item.image}`}
-                  alt={item.name}
-                />
-                <p>{item.name}</p>
-                <small>{item.energy}</small>
-              </div>
+                <div className="fat-category">
+                  <h4>ไขมันทรานส์</h4>
+                  <div className="fat-grid">
+                    {foodData.fat.trans.map((item, idx) => (
+                      <div key={idx} className="fat-item">
+                        <img
+                          src={`${process.env.PUBLIC_URL}${item.image}`}
+                          alt={item.name}
+                        />
+                        <p>{item.name}</p>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -184,7 +174,6 @@ function NutrientPopup({
           </div>
         )}
 
-        {/* ปุ่มปิด */}
         <button className="popup-close-btn" onClick={onClose}>
           ปิด
         </button>

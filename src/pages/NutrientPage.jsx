@@ -44,13 +44,13 @@ function NutrientPage() {
             }}
           >
             <div className="nutrient-color-box"></div>
-
+            <div className="nutrient-image-wrapper">
             <img
               src={`${process.env.PUBLIC_URL}${foodData[type].image}`}
               alt={foodData[type].title}
               className="nutrient-image"
             />
-
+            </div>
             <h3>{foodData[type].title}</h3>
             <p>
               BMR:{" "}

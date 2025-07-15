@@ -30,7 +30,7 @@ function Home_page() {
           </div>
           <div className="button-box-home">
             <button onClick={goToInformation_page} className="button-text-home">
-              Start
+              <h1>Start</h1>
             </button>
           </div>
           <div className="button-box-orter">

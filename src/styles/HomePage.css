@@ -66,14 +66,14 @@ body {
 }
 
 .button-text-home {
-  background-color: #b6e3e9;
+  background-color: #ffffff;
   border: none;
-  padding: 20px 250px;
+  padding: 0.1px 250px;
   border-radius: 30px;
-  font-size: 38px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.3s ease;
-  color: rgb(255, 255, 255);
+  color: #995355;
 }
 
 .button-text-home:hover {

@@ -83,3 +83,12 @@
   color: rgb(0, 0, 0);
   font-size: 32px;
 }
+
+.contact-details-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  margin-top: -20px;
+}

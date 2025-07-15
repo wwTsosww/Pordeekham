@@ -14,7 +14,7 @@ function BMR({ onClose }) {
         </button>
 
         <div className="BMR-title-box">
-          <h1 className="BMR-title-text">BMR</h1>
+          <h1 className="BMR-title-text">คำอธิบายเกณฑ์</h1>
         </div>
 
         <div className="BMR-bubble">
@@ -32,25 +32,20 @@ function BMR({ onClose }) {
 
           <div className="BMR-info-box">
             <div className="BMR-box">
-              <div className="BMR-box-details">BMI: {bmi.toFixed(2)}</div>
-              <div className="BMR-box-details">BMR: {bmr.toFixed(2)}</div>
-              <div className="BMR-box-details">TDEE: {tdee.toFixed(2)}</div>
+              <div className="BMR-box-details">BMI (Body Mass Index) เป็นการวัดทางสถิติที่ใช้ประเมินน้ำหนักตัวเทียบกับส่วนสูง</div>
+              <div className="BMR-box-details">BMR (Basal Metabolic Rate)คือ อัตราการเผาผลาญพื้นฐาน เป็นตัวบ่งบอกถึงปริมาณพลังงานพื้นฐานที่ร่างกายต้องการในแต่ละวัน</div>
+              <div className="BMR-box-details">TDEE (Total Daily Energy Expenditure) ซึ่งหมายถึงปริมาณพลังงานที่ร่างกายต้องการทั้งหมดในแต่ละวัน รวมกับกิจกรรมที่ทำในแต่ละวันนั่นเอง</div>
             </div>
             <div className="BMR-end-text">
-              <h>
-                หากต้องการลดน้ำหนัก แนะนำให้ลดปริมาณพลังงานให้น้อยกว่าที่ร่างกายใช้วันละ
-              </h>
-              <h>
-                ประมาณ 500 แคลอรี่ แต่เมื่อลบออก 500 แคลอรี่แล้ว ห้ามน้อยกว่าค่า BMR
-                เพราะจะทำให้
-              </h>
-              <h>
-                ร่างกายได้รับพลังงานน้อยเกินไป
-                เมื่อร่างกายเรียนรู้ว่าได้รับพลังงานน้อยมาก ก็จะไม่ยอมใช้
-              </h>
-              <h>
-                พลังงานตามปกติ อาจส่งผลต่อระบบเผาผลาญ
-              </h>
+              <p>
+                -การลดน้ำหนักควรลดพลังงานลงวันละประมาณ 500 แคลอรี่
+              </p>
+              <p>
+                -ห้ามลดพลังงานน้อยกว่าค่า BMR ของร่างกาย
+              </p>
+              <p>
+                -หากได้รับพลังงานน้อยเกินไปร่างกายจะลดการเผาผลาญทำให้ลดน้ำหนักยากขึ้น
+              </p>
             </div>
           </div>
         </div>

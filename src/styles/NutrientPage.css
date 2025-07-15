@@ -194,12 +194,21 @@ button.next-button:hover {
   background-color: #a86666;
 }
 
-.nutrient-image {
+.nutrient-image-wrapper {
   width: 180px;
   height: 180px;
-  object-fit: contain;
+  overflow: hidden;
+  border-radius: 12px;
   margin: 10px auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nutrient-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 button.Nutrient-button{

@@ -15,6 +15,10 @@ function Contact({ onClose }) {
           <h1 className="contact-box">ห้องตรวจโภชนบำบัด โทร.</h1>
           <h1 className="contact-mobile">02-534-7504</h1>
         </div>
+        <div className="contact-details-1">
+          <h1 className="contact-box">โรงพยาบาลภูมิพลอดุลยเดช โทร.</h1>
+          <h1 className="contact-mobile">02-534-7000</h1>
+        </div>
       </div>
     </div>
   );
