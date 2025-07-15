@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pordeekham/static/css/main.f67d6f28.css",
-    "main.js": "/Pordeekham/static/js/main.dce74dab.js",
+    "main.css": "/Pordeekham/static/css/main.fd606e12.css",
+    "main.js": "/Pordeekham/static/js/main.f187b289.js",
     "static/media/40.PNG": "/Pordeekham/static/media/40.df49380e0e06e2969efe.PNG",
     "static/media/39.PNG": "/Pordeekham/static/media/39.bcae2130196ef44bd0da.PNG",
     "static/media/34.PNG": "/Pordeekham/static/media/34.81b67bb4c1d62c0d796d.PNG",
@@ -12,11 +12,11 @@
     "static/media/background_content.jpg": "/Pordeekham/static/media/background_content.9ff212f615392c42a5d0.jpg",
     "static/media/cover_background.jpg": "/Pordeekham/static/media/cover_background.616930d874a42559fdae.jpg",
     "index.html": "/Pordeekham/index.html",
-    "main.f67d6f28.css.map": "/Pordeekham/static/css/main.f67d6f28.css.map",
-    "main.dce74dab.js.map": "/Pordeekham/static/js/main.dce74dab.js.map"
+    "main.fd606e12.css.map": "/Pordeekham/static/css/main.fd606e12.css.map",
+    "main.f187b289.js.map": "/Pordeekham/static/js/main.f187b289.js.map"
   },
   "entrypoints": [
-    "static/css/main.f67d6f28.css",
-    "static/js/main.dce74dab.js"
+    "static/css/main.fd606e12.css",
+    "static/js/main.f187b289.js"
   ]
 }
