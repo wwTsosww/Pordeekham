@@ -1,4 +1,4 @@
-/* พื้นหลังรวม */
+
 .background {
   background-image: url("../assets/background_content.jpg");
   background-size: cover;
@@ -6,7 +6,6 @@
   min-height: 100vh;
 }
 
-/* หัวข้อ "ข้อมูลร่างกาย" */
 .body-box {
   display: flex;
   justify-content: center;
@@ -26,7 +25,6 @@
   justify-content: center;
 }
 
-/* กล่องใหญ่ทั้งหมด (ซ้าย-ขวา) */
 .bmi-box {
   display: flex;
   justify-content: center;
@@ -38,7 +36,6 @@
   margin-top: -15px;
 }
 
-/* กล่องกรอกข้อมูล (ด้านซ้าย) */
 .bmi-informetion {
   display: flex;
   flex-direction: column;
@@ -50,7 +47,6 @@
   width: 100%;
 }
 
-/* กล่องสีชมพูแดง */
 .gg {
   display: flex;
   flex-direction: column;
@@ -60,7 +56,6 @@
   gap: 6px;
 }
 
-/* กล่อง field input แต่ละแถว */
 .informetion-box {
   display: flex;
   align-items: center;
@@ -76,7 +71,6 @@
   margin: 0;
 }
 
-/* ปุ่ม */
 button.bmi-button-0 {
   padding: 12px 24px;
   background-color: #995355;
@@ -104,7 +98,7 @@ button.bmi-button-1 {
 }
 
 button.bmi-button-2 {
-  display: block;           /* ต้องมี block-level */
+  display: block;
   margin-left: 90%;  
   padding: 12px 24px;
   background-color: #995355;
@@ -124,7 +118,6 @@ button.bmi-button-2:hover {
   background-color: #a86666;
 }
 
-/* กล่องแสดงผล (ด้านขวา) */
 .bmi-result {
   padding: 1rem;
   box-sizing: border-box;
@@ -132,7 +125,6 @@ button.bmi-button-2:hover {
   width: 100%;
 }
 
-/* กล่องภายในผลลัพธ์ */
 .section-box {
   display: flex;
   flex-direction: column;
@@ -152,7 +144,6 @@ button.bmi-button-2:hover {
   margin-bottom: 1rem;
 }
 
-/* กล่องแสดงค่าแต่ละตัว */
 .result-group,
 .input-group {
   background: #fdfdfd;
@@ -161,7 +152,6 @@ button.bmi-button-2:hover {
   border-radius: 8px;
 }
 
-/* ฟอร์มอินพุต */
 input[type="number"],
 select {
   padding: 6px 10px;
@@ -181,7 +171,6 @@ select:focus {
   box-shadow: 0 0 6px rgba(153, 83, 85, 0.4);
 }
 
-/* popup ที่แสดงผล BMI */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -221,16 +210,4 @@ select:focus {
   width: 340px;
   height: 420px;
   margin: 1rem 0;
-}
-
-/* เอ็ฟเฟกต์แสดง popup */
-@keyframes fadeIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }

@@ -140,7 +140,6 @@ button.next-button:hover {
   color: #666;
 }
 
-/* กล่องฝั่งซ้าย-ขวา */
 .popup-compare {
   display: flex;
   justify-content: space-between;
