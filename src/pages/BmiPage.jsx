@@ -65,7 +65,6 @@ function BmiPage() {
                 <option value="">-- เลือกเพศ --</option>
                 <option value="ชาย">ชาย</option>
                 <option value="หญิง">หญิง</option>
-                <option value="อื่นๆ">อื่นๆ</option>
               </select>
             </label>
 
