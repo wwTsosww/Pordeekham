@@ -2,7 +2,7 @@ const foodData = {
   protein: {
     title: "โปรตีน",
     color: "#a48eeb",
-    image: "/images/food_data/logo/pa.png",
+    image: "/images/food_data/logo/pa.PNG",
     base: {
       name: "เนื้ออกไก่ 60 กรัม",
       image: "/images/food_data/pro/pa_0.jpg",
@@ -29,7 +29,7 @@ const foodData = {
   carb: {
     title: "คาร์โบไฮเดรต",
     color: "#e2b05e",
-    image: "/images/food_data/logo/car.png",
+    image: "/images/food_data/logo/car.PNG",
     base: {
       name: "ข้าวขาว 1/3 ถ้วยตวง",
       image: "/images/food_data/carbohydrate/whiterice.jpg",
