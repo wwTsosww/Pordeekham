@@ -5,14 +5,23 @@ const foodData = {
     image: "/images/food_data/logo/pa.png",
     base: {
       name: "เนื้ออกไก่ 60 กรัม",
-      image: "/images/chicken.png",
+      image: "/images/food_data/pro/pa_0.jpg",
       energy: "1 โปรตีน",
     },
     compare: [
-      { name: "ไข่ 1 ฟอง", image: "/images/egg.png", energy: "1 โปรตีน" },
       {
         name: "เต้าหู้แข็ง 1/2 ก้อน",
-        image: "/images/tofu.png",
+        image: "/images/food_data/pro/pa_1.PNG",
+        energy: "1 โปรตีน",
+      },
+      {
+        name: "เต้าหู้แข็ง 1/2 ก้อน",
+        image: "/images/food_data/pro/pa_2.PNG",
+        energy: "1 โปรตีน",
+      },
+      {
+        name: "เต้าหู้แข็ง 1/2 ก้อน",
+        image: "/images/food_data/pro/pa_3.PNG",
         energy: "1 โปรตีน",
       },
     ],
@@ -124,28 +133,28 @@ fat: {
     energy: "1 ไขมัน",
   },
   mono: [ // ไขมันอิ่มตัวเชิงเดี่ยว
-    { name: "น้ำมันมะกอก", image: "/images/fat/olive_oil.jpg", energy: "1 ไขมัน" },
-    { name: "อะโวคาโด", image: "/images/fat/avocado.jpg", energy: "1 ไขมัน" },
-    { name: "ถั่วลิสง", image: "/images/fat/peanuts.jpg", energy: "1 ไขมัน" },
-    { name: "อัลมอนด์", image: "/images/fat/almond.jpg", energy: "1 ไขมัน" }
+    { name: "น้ำมันมะกอก", image: "/images/food_data/ki/d/olive_oil.png", energy: "1 ไขมัน" },
+    { name: "อะโวคาโด", image: "/images/food_data/ki/d/Avocado.jpg", energy: "1 ไขมัน" },
+    { name: "ถั่วลิสง", image: "/images/food_data/ki/d/peanuts.png", energy: "1 ไขมัน" },
+    { name: "อัลมอนด์", image: "/images/food_data/ki/d/almond.jpg", energy: "1 ไขมัน" }
   ],
   poly: [ // ไขมันอิ่มตัวเชิงซ้อน
-    { name: "น้ำมันดอกทานตะวัน", image: "/images/fat/sunflower_oil.jpg", energy: "1 ไขมัน" },
-    { name: "น้ำมันถั่วเหลือง", image: "/images/fat/soybean_oil.jpg", energy: "1 ไขมัน" },
-    { name: "วอลนัท", image: "/images/fat/walnut.jpg", energy: "1 ไขมัน" },
-    { name: "ปลาแซลมอน", image: "/images/fat/salmon.jpg", energy: "1 ไขมัน" }
+    { name: "น้ำมันดอกทานตะวัน", image: "/images/food_data/ki/d/sunflower_oil.png", energy: "1 ไขมัน" },
+    { name: "น้ำมันถั่วเหลือง", image: "/images/food_data/ki/d/soybean_oil.png", energy: "1 ไขมัน" },
+    { name: "วอลนัท", image: "/images/food_data/ki/d/walnuts.jpg", energy: "1 ไขมัน" },
+    { name: "ปลาแซลมอน", image: "/images/food_data/ki/d/salmon.png", energy: "1 ไขมัน" }
   ],
   saturated: [ // ไขมันอิ่มตัว
-    { name: "เนย", image: "/images/fat/butter.jpg", energy: "1 ไขมัน" },
-    { name: "กะทิ", image: "/images/fat/coconut_milk.jpg", energy: "1 ไขมัน" },
-    { name: "น้ำมันหมู", image: "/images/fat/lard.jpg", energy: "1 ไขมัน" },
-    { name: "เนื้อติดมัน", image: "/images/fat/fatty_meat.jpg", energy: "1 ไขมัน" }
+    { name: "เนย", image: "/images/food_data/ki/m/butter.jpg", energy: "1 ไขมัน" },
+    { name: "กะทิ", image: "/images/food_data/ki/m/coconut.jpg", energy: "1 ไขมัน" },
+    { name: "น้ำมันหมู", image: "/images/food_data/ki/m/oil_butter.png", energy: "1 ไขมัน" },
+    { name: "เนื้อติดมัน", image: "/images/food_data/ki/m/meat.jpeg", energy: "1 ไขมัน" }
   ],
   trans: [ // ไขมันทรานส์
-    { name: "มาการีน", image: "/images/fat/margarine.jpg", energy: "1 ไขมัน" },
-    { name: "ขนมอบสำเร็จรูป", image: "/images/fat/bakery.jpg", energy: "1 ไขมัน" },
-    { name: "มันฝรั่งทอด", image: "/images/fat/french_fries.jpg", energy: "1 ไขมัน" },
-    { name: "โดนัท", image: "/images/fat/donut.jpg", energy: "1 ไขมัน" }
+    { name: "มาการีน", image: "/images/food_data/ki/m/magaren.jpeg", energy: "1 ไขมัน" },
+    { name: "ขนมอบสำเร็จรูป", image: "/images/food_data/ki/m/sanke.png", energy: "1 ไขมัน" },
+    { name: "มันฝรั่งทอด", image: "/images/food_data/ki/m/potato_ch.jpg", energy: "1 ไขมัน" },
+    { name: "โดนัท", image: "/images/food_data/ki/m/donut.jpg", energy: "1 ไขมัน" }
   ]
 }
 };

@@ -153,7 +153,11 @@
   color: #444;
 }
 
-/* สองฝั่ง HDL / LDL */
+/* ===========================
+   ✅ Layout ไขมันพิเศษ
+=========================== */
+
+/* สองฝั่ง HDL / LDL ให้กว้างขึ้น */
 .fat-two-column {
   display: flex;
   justify-content: space-between;
@@ -161,39 +165,50 @@
   width: 100%;
 }
 
-/* ฝั่งซ้าย-ขวา */
+/* ฝั่งซ้าย-ขวาให้ใหญ่ขึ้น */
 .fat-side {
   flex: 1;
   background: #fdfdfd;
-  padding: 10px;
+  padding: 15px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* หัวข้อใหญ่ */
 .fat-side-title {
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 20px;
+  margin-bottom: 6px;
   color: #333;
   font-weight: bold;
 }
 
+/* ✅ ข้อความอธิบายใต้หัวข้อ */
+.fat-side-desc {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
 /* กล่องประเภทไขมัน */
 .fat-category {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .fat-category h4 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
   font-size: 16px;
   color: #555;
+  font-weight: 600;
 }
 
-/* Grid 4 รูป */
+/* ✅ ปรับ Grid → 4 รูปต่อ 1 แถว */
 .fat-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 รูปในแถวเดียว */
   gap: 10px;
 }
 
@@ -207,8 +222,8 @@
 }
 
 .fat-item img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   margin-bottom: 4px;
 }
