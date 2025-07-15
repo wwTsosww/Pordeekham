@@ -4,10 +4,16 @@ import "../styles/NutrientPage.css";
 import foodData from "../data/foodData";
 import { calcMacro } from "../utils/calc";
 import NutrientPopup from "../components/NutrientPopup";
+import { useNavigate } from "react-router-dom";
 
 function NutrientPage() {
+  const navigate = useNavigate();
   const location = useLocation();
   const { bmr, tdee } = location.state || {};
+
+    const goToInformation_page = () => {
+    navigate("/FoodPage");
+  };
 
   const [popupVisible, setPopupVisible] = useState(false);
   const [selectedTab, setSelectedTab] = useState("protein");
@@ -66,6 +72,7 @@ function NutrientPage() {
         ))}
       </div>
 
+
       {popupVisible && (
         <NutrientPopup
           foodData={foodData}
@@ -76,7 +83,9 @@ function NutrientPage() {
           onClose={() => setPopupVisible(false)}
         />
       )}
+        <button type="button" onClick={goToInformation_page} className="Nutrient-button">ถัดไป</button>
     </div>
+    
   );
 }
 

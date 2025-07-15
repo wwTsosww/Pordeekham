@@ -201,3 +201,22 @@ button.next-button:hover {
   margin: 10px auto;
   display: block;
 }
+
+button.Nutrient-button{
+  display: block;
+  margin-left: 80%;  
+  padding: 12px 24px;
+  background-color: #995355;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: 5%;
+}
+
+button.Nutrient-button:hover {
+  background-color: #a86666;
+}
