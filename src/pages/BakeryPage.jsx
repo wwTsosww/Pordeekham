@@ -24,7 +24,7 @@ function BakeryPage() {
 
     <div className="nutrient-card-bakery">
       <img src={`${process.env.PUBLIC_URL}/images/food_data/bakery/IMG_6405.JPG`} alt="ของว่าง" />
-      <p>ขนมปีงปิ้งเนบนม 220-280 kcal</p>
+      <p>ขนมปีงปิ้งเนยนม 220-280 kcal</p>
       <p>คาร์บ:30-40 g</p>
       <p>น้ำตาล:18-25 g (4-6 ช้อนชา)</p>
     </div>
@@ -76,6 +76,13 @@ function BakeryPage() {
       <p>เอแคลร์ 200-280 kcal</p>
       <p>คาร์บ:25-35 g</p>
       <p>น้ำตาล:15-25 g (4-6 ช้อนชา)</p>
+    </div>
+
+    <div className="nutrient-card-bakery">
+      <img src={`${process.env.PUBLIC_URL}/images/food_data/bakery/IMG_6429.JPG`} alt="ของว่าง" />
+      <p>ไอศรีม 160-180 kcal/ลูก</p>
+      <p>คาร์บ:14-20 g</p>
+      <p>น้ำตาล:12-16 g (3-4 ช้อนชา)</p>
     </div>
   </div>
 
