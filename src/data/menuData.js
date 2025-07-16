@@ -52,7 +52,7 @@ export const menuData = {
       kcal: "400-500 kcal",
       img: "/images/food_data/meal/IMG_6315.JPG",
       items: [
-        "แซนวิชสลััดไข่ต้ม + นมจืด 430 kcal",
+        "แซนวิชสลัดไข่ต้ม + นมจืด 430 kcal",
         "แพนเค้กกล้วยหอม 350 kcal",
         "ข้าวขาหมู 450 kcal",
         "ข้าวผัดหมู 500 kcal",
