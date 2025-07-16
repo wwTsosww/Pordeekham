@@ -12,7 +12,7 @@ function BakeryPage() {
 
   return (
 <div className="nutrient-background">
-  <h1 className="nutrient-title">BakeryPage</h1>
+  <h1 className="nutrient-title">พลังงานในเบเกอรี่และเครื่องดื่ม</h1>
 
   <div className="nutrient-grid-bakery">
     <div className="nutrient-card-bakery">
