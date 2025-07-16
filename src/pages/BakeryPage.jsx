@@ -24,7 +24,7 @@ function BakeryPage() {
 
     <div className="nutrient-card-bakery">
       <img src={`${process.env.PUBLIC_URL}/images/food_data/bakery/IMG_6405.JPG`} alt="ของว่าง" />
-      <p>ขนมปีงปิ้งเนยนม 220-280 kcal</p>
+      <p>ขนมปังปิ้งเนยนม 220-280 kcal</p>
       <p>คาร์บ:30-40 g</p>
       <p>น้ำตาล:18-25 g (4-6 ช้อนชา)</p>
     </div>
