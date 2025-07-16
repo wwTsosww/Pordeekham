@@ -8,7 +8,7 @@ function NutrientPopup({
   setCompareIndex,
   onClose,
 }) {
-  // 👉 ป้องกัน error ถ้า selectedTab === fat
+
   const hasCompare = selectedTab !== "fat";
 
   const handlePrev = () => {
@@ -64,6 +64,8 @@ function NutrientPopup({
                 alt={foodData[selectedTab].compare[compareIndex].name}
                 className="popup-big-image"
               />
+              <h4>{foodData[selectedTab].compare[compareIndex].name}</h4>
+              <p>{foodData[selectedTab].compare[compareIndex].energy}</p>
 
               <div className="popup-arrows-side">
                 {!isFirst && (

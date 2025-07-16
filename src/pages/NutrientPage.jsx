@@ -1,5 +1,6 @@
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+// NutrientPage.jsx
+import { useContext, useState } from "react";
+import { UserDataContext } from "../context/UserDataContext";
 import "../styles/NutrientPage.css";
 import foodData from "../data/foodData";
 import { calcMacro } from "../utils/calc";
@@ -7,13 +8,9 @@ import NutrientPopup from "../components/NutrientPopup";
 import { useNavigate } from "react-router-dom";
 
 function NutrientPage() {
+  const { userData } = useContext(UserDataContext);
+  const { bmr, tdee } = userData || {};
   const navigate = useNavigate();
-  const location = useLocation();
-  const { bmr, tdee } = location.state || {};
-
-    const goToInformation_page = () => {
-    navigate("/FoodPage");
-  };
 
   const [popupVisible, setPopupVisible] = useState(false);
   const [selectedTab, setSelectedTab] = useState("protein");
@@ -27,6 +24,10 @@ function NutrientPage() {
     setSelectedTab(type);
     setCompareIndex(0);
     setPopupVisible(true);
+  };
+
+  const goToFoodPage = () => {
+    navigate("/FoodPage");
   };
 
   return (
@@ -43,13 +44,12 @@ function NutrientPage() {
               cursor: "pointer",
             }}
           >
-            <div className="nutrient-color-box"></div>
             <div className="nutrient-image-wrapper">
-            <img
-              src={`${process.env.PUBLIC_URL}${foodData[type].image}`}
-              alt={foodData[type].title}
-              className="nutrient-image"
-            />
+              <img
+                src={`${process.env.PUBLIC_URL}${foodData[type].image}`}
+                alt={foodData[type].title}
+                className="nutrient-image"
+              />
             </div>
             <h3>{foodData[type].title}</h3>
             <p>
@@ -72,7 +72,6 @@ function NutrientPage() {
         ))}
       </div>
 
-
       {popupVisible && (
         <NutrientPopup
           foodData={foodData}
@@ -83,9 +82,11 @@ function NutrientPage() {
           onClose={() => setPopupVisible(false)}
         />
       )}
-        <button type="button" onClick={goToInformation_page} className="Nutrient-button">ถัดไป</button>
+
+      <button type="button" onClick={goToFoodPage} className="Nutrient-button">
+        ถัดไป
+      </button>
     </div>
-    
   );
 }
 

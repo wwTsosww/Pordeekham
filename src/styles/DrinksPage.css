@@ -1,0 +1,72 @@
+
+
+.nutrient-subtitle-drinks {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.nutrient-grid-drinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem; /* เดิม 3rem */
+  justify-items: center;
+  margin-bottom: 0.1rem;
+}
+
+.nutrient-card-drinks {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 240px; /* จาก 300px เหลือ 240px */
+  text-align: center;
+}
+
+.nutrient-card-drinks h3 {
+  font-size: 20px;
+  color: #995355;
+  margin-bottom: 0.5rem;
+}
+
+.nutrient-card-drinks img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.nutrient-card-drinks p {
+  font-size: 14px;
+  color: #333;
+}
+
+.Nutrient-button-end {
+  background-color: #a3181c;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.Nutrient-button-end:hover {
+  background-color: #bb4444;
+}
+
+.nutrient-info-box {
+  background-color: #fff6e6;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}

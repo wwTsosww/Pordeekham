@@ -33,17 +33,17 @@ function BmiPage() {
   } = useBmiForm(userData, setUserData);
 
   const goToNutrientPage = () => {
-    navigate("/nutrient", { state: { bmr, tdee } });
+    navigate("/nutrient",);
   };
   const [showBMR, setShowBMR] = useState(false);
   const [showBBmi, setShowBBmi] = useState(false);
 
   const handlePopupNext = () => {
-  setShowPopup(false);       // ปิด popup แรก
-  setTimeout(() => {
-    setShowBBmi(true);       // รอจนปิดก่อนแล้วค่อยเปิดอันใหม่
-  }, 100);                   // delay สั้นๆ ป้องกันซ้อน
-};
+    setShowPopup(false);
+    setTimeout(() => {
+      setShowBBmi(true);
+    }, 100);
+  };
 
   return (
     <div className="background">
@@ -124,7 +124,7 @@ function BmiPage() {
           </div>
 
           <button className="bmi-button-0">คำนวณ</button>
-          
+
           {bmi !== null && (
             <button
               type="button"
@@ -169,14 +169,14 @@ function BmiPage() {
         {showBBmi && <BBmi onClose={() => setShowBBmi(false)} />}
       </div>
       {bmi !== null && (
-              <button
-                type="button"
-                onClick={goToNutrientPage}
-                className="bmi-button-2"
-              >
-                ถัดไป
-              </button>
-            )}
+        <button
+          type="button"
+          onClick={goToNutrientPage}
+          className="bmi-button-2"
+        >
+          ถัดไป
+        </button>
+      )}
 
       {showPopup && (
         <BmiPopup

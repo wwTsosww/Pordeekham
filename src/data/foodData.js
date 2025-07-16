@@ -4,25 +4,85 @@ const foodData = {
     color: "#a48eeb",
     image: "/images/food_data/logo/pa.PNG",
     base: {
-      name: "เนื้ออกไก่ 60 กรัม",
-      image: "/images/food_data/pro/pa_0.jpg",
-      energy: "1 โปรตีน",
+      name: "หมูเนื้อแดง 30 กรัมโปรตีน 7 กรัม",
+      image: "/images/food_data/pro/หมูเนื้อแดง 30 กรัมโปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+      energy: "พลังงาน 28 kcal",
     },
     compare: [
       {
-        name: "เต้าหู้แข็ง 1/2 ก้อน",
-        image: "/images/food_data/pro/pa_1.PNG",
-        energy: "1 โปรตีน",
+        name: "กุ้ง (ตัวกลาง) โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/กุ้ง (ตัวกลาง) โปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
       },
       {
-        name: "เต้าหู้แข็ง 1/2 ก้อน",
-        image: "/images/food_data/pro/pa_2.PNG",
-        energy: "1 โปรตีน",
+        name: "กุนเชียง 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/กุนเชียง 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
       },
       {
-        name: "เต้าหู้แข็ง 1/2 ก้อน",
-        image: "/images/food_data/pro/pa_3.PNG",
-        energy: "1 โปรตีน",
+        name: "ไข่ไก่ 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ไข่ไก่ 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.jpg",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "ไข่ขาว โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ไข่ขาว โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เต้าหู้ 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/เต้าหู้ 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เต้าหู้แข็ง 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/เต้าหู้แข็ง 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.jpg",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "นมถั่วเหลือง 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/นมถั่วเหลือง 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.jpg",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เนื้อปลา โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/เนื้อปลา โปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เนื้ออกไก่ 30 กรัม โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/เนื้ออกไก่ 30 กรัม โปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เบคอน 30 กรัม โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/เบคอน 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.jpg",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "ปลาซาดีนกระป๋อง 30 กรัม โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ปลาซาดีนกระป๋อง 30 กรัมโปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "ปลาทู โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ปลาทู โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "เลูกชิ้นหมู 30 กรัมโปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ลูกชิ้นหมู 30 กรัมโปรตีน 7 กรัม ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "ไส้กรอก 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/ไส้กรอก 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
+      },
+            {
+        name: "หมูยอ 30 กรัม  โปรตีน 7 กรัม",
+        image: "/images/food_data/pro/หมูยอ 30 กรัม  โปรตีน 7 กรัม  ให้พลังงาน 28 kcal.PNG",
+        energy: "พลังงาน 28 kcal",
       },
     ],
   },
@@ -132,25 +192,25 @@ fat: {
     image: "/images/oil.png",
     energy: "1 ไขมัน",
   },
-  mono: [ // ไขมันอิ่มตัวเชิงเดี่ยว
+  mono: [
     { name: "น้ำมันถั่วลิสง", image: "/images/food_data/ki/HDL/a/น้ำมันถั่วลิสง.JPG", energy: "1 ไขมัน" },
     { name: "น้ำมันมะกอก", image: "/images/food_data/ki/HDL/a/น้ำมันมะกอก.JPG", energy: "1 ไขมัน" },
     { name: "น้ำมันเมล็ดองุ่น", image: "/images/food_data/ki/HDL/a/น้ำมันเมล็ดองุ่น.JPG", energy: "1 ไขมัน" },
     { name: "อะโวคาโด", image: "/images/food_data/ki/HDL/a/อะโวคาโด.JPG", energy: "1 ไขมัน" }
   ],
-  poly: [ // ไขมันอิ่มตัวเชิงซ้อน
+  poly: [
     { name: "น้ำมันข้าวโพด", image: "/images/food_data/ki/HDL/b/น้ำมันข้าวโพด.JPG", energy: "1 ไขมัน" },
     { name: "น้ำมันงา", image: "/images/food_data/ki/HDL/b/น้ำมันงา.JPG", energy: "1 ไขมัน" },
     { name: "น้ำมันถั่วเหลือง", image: "/images/food_data/ki/HDL/b/น้ำมันถั่วเหลือง.JPG", energy: "1 ไขมัน" },
     { name: "น้ำมันทานตะวัน", image: "/images/food_data/ki/HDL/b/น้ำมันทานตะวัน.JPG", energy: "1 ไขมัน" }
   ],
-  saturated: [ // ไขมันอิ่มตัว
+  saturated: [
     { name: "ไขมันมะพร้าว", image: "/images/food_data/ki/LDL/c/ไขมันมะพร้าว.JPG", energy: "1 ไขมัน" },
     { name: "ไขมันสัตว์", image: "/images/food_data/ki/LDL/c/ไขมันสัตว์.JPG", energy: "1 ไขมัน" },
     { name: "ครีมเทียม", image: "/images/food_data/ki/LDL/c/ครีมเทียม.JPG", energy: "1 ไขมัน" },
     { name: "เนย เนยแข็ง", image: "/images/food_data/ki/LDL/c/เนย เนยแข็ง.JPG", energy: "1 ไขมัน" }
   ],
-  trans: [ // ไขมันทรานส์
+  trans: [
     { name: "ช็อกโกแลต", image: "/images/food_data/ki/LDL/d/ช็อกโกแลต.JPG", energy: "1 ไขมัน" },
     { name: "เนยถั่ว", image: "/images/food_data/ki/LDL/d/เนยถั่ว.JPG", energy: "1 ไขมัน" },
     { name: "มาการีน", image: "/images/food_data/ki/LDL/d/มาการีน.JPG", energy: "1 ไขมัน" },
