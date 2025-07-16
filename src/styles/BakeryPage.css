@@ -56,15 +56,3 @@
 .Nutrient-button-end:hover {
   background-color: #bb4444;
 }
-
-.nutrient-info-box {
-  background-color: #fff6e6;
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-}
