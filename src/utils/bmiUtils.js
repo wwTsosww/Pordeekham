@@ -8,12 +8,7 @@ export function calculateBmr(gender, weight, height, age) {
   } else if (gender === "ชาย") {
     return 66 + 13.7 * weight + 5 * height - 6.8 * age;
   }
-  return (
-    (665 + 66) / 2 +
-    ((9.6 + 13.7) / 2) * weight +
-    ((1.9 + 5) / 2) * height -
-    ((4.7 + 6.8) / 2) * age
-  );
+  return null; // ไม่รองรับเพศอื่น
 }
 
 export function getActivityMultiplier(activity) {
@@ -51,8 +46,7 @@ export function getBmiLevelAndImage(bmi, gender) {
     file = "40.PNG";
   }
 
-  const genderFolder =
-    gender === "ชาย" ? "male" : gender === "หญิง" ? "female" : "other";
+  const genderFolder = gender === "ชาย" ? "male" : "female";
 
   let imagePath;
   try {
