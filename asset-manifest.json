@@ -1,28 +1,22 @@
 {
   "files": {
     "main.css": "/Pordeekham/static/css/main.bb54b94f.css",
-    "main.js": "/Pordeekham/static/js/main.62a1f05d.js",
-    "static/media/40.PNG": "/Pordeekham/static/media/40.7fecbf71d01e84ead891.PNG",
-    "static/media/24.PNG": "/Pordeekham/static/media/24.ca6e3660c27fe0bba45a.PNG",
-    "static/media/39.PNG": "/Pordeekham/static/media/39.69343baed2ead7de41cc.PNG",
-    "static/media/18.PNG": "/Pordeekham/static/media/18.706dad1eb4ce078fb5ca.PNG",
-    "static/media/22.PNG": "/Pordeekham/static/media/22.b0bd3c0cb3b1d908936e.PNG",
+    "main.js": "/Pordeekham/static/js/main.57c90641.js",
+    "static/media/40.PNG": "/Pordeekham/static/media/40.8991b571b1d62e0c04d4.PNG",
+    "static/media/24.PNG": "/Pordeekham/static/media/24.dd5dbc0a9df6db0b081d.PNG",
+    "static/media/39.PNG": "/Pordeekham/static/media/39.8d159203309fbc82debd.PNG",
+    "static/media/18.PNG": "/Pordeekham/static/media/18.43b5e784a1b8f782e655.PNG",
+    "static/media/22.PNG": "/Pordeekham/static/media/22.68a4cb4aee5a75d72845.PNG",
     "static/media/cover_logo.png": "/Pordeekham/static/media/cover_logo.13ebe2b2be8f14fc8725.png",
     "static/media/background_content.jpg": "/Pordeekham/static/media/background_content.9ff212f615392c42a5d0.jpg",
     "static/media/cover_background.jpg": "/Pordeekham/static/media/cover_background.616930d874a42559fdae.jpg",
-    "static/media/22.png": "/Pordeekham/static/media/22.68a4cb4aee5a75d72845.png",
-    "static/media/24.png": "/Pordeekham/static/media/24.dd5dbc0a9df6db0b081d.png",
-    "static/media/39.png": "/Pordeekham/static/media/39.8d159203309fbc82debd.png",
-    "static/media/34.png": "/Pordeekham/static/media/34.d03596f1c59976a5478a.png",
-    "static/media/40.png": "/Pordeekham/static/media/40.8991b571b1d62e0c04d4.png",
-    "static/media/18.png": "/Pordeekham/static/media/18.43b5e784a1b8f782e655.png",
     "static/media/34.PNG": "/Pordeekham/static/media/34.79fcf67796a57743b13d.PNG",
     "index.html": "/Pordeekham/index.html",
     "main.bb54b94f.css.map": "/Pordeekham/static/css/main.bb54b94f.css.map",
-    "main.62a1f05d.js.map": "/Pordeekham/static/js/main.62a1f05d.js.map"
+    "main.57c90641.js.map": "/Pordeekham/static/js/main.57c90641.js.map"
   },
   "entrypoints": [
     "static/css/main.bb54b94f.css",
-    "static/js/main.62a1f05d.js"
+    "static/js/main.57c90641.js"
   ]
 }
