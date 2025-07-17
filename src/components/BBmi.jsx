@@ -10,6 +10,7 @@ function BBmi({ onClose }) {
         </div>
 
       <div className="end-text">
+        
         <h>
           ค่า BMI ของผู้ใหญ่ควรมีค่าอยู่ระหว่าง "18.5 - 22.9
           กิโลกรัมต่อตารางเมตร"
