@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserDataContext } from "../context/UserDataContext";
-import { menuData } from "../data/menuData"; // ✅ นำเข้าข้อมูลเมนู
+import { menuData } from "../data/menuData"; 
 import "../styles/FoodPage.css";
 
 function FoodPage() {
@@ -10,12 +10,12 @@ function FoodPage() {
 
   const BakeryPage = () => navigate("/bakery");
 
-  // ✅ ฟังก์ชันเลือกช่วงแคลอรีจาก BMR
   const getCalorieRange = () => {
     if (!userData?.bmr) return "1200-1400";
     if (userData.bmr < 1500) return "1200-1400";
     if (userData.bmr < 1800) return "1500-1700";
-    return "1800-2000";
+    if (userData.bmr < 2000) return "1800-2000";
+    return "2100-2400";
   };
 
   const calorieRange = getCalorieRange();
@@ -23,13 +23,11 @@ function FoodPage() {
 
   return (
     <div className="nutrient-background">
-      {/* ✅ แสดงช่วงแคลอรี */}
       <h1 className="nutrient-title">แนะนำเมนูอาหาร</h1>
       <h2 className="nutrient-subtitle">
         ครบมื้อ ครบแคล ({calorieRange}/วัน) kcal
       </h2>
 
-      {/* ✅ วนลูปเมนูจาก menuData */}
       <div className="nutrient-grid">
         {selectedMenu.map((meal, idx) => (
           <div key={idx} className="nutrient-card">

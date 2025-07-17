@@ -144,7 +144,7 @@ export const menuData = {
     {
       meal: "มื้อเช้า",
       kcal: "700-800 kcal",
-      img: "/images/food_data/meal/IMG_6326.JPG",
+      img: "/images/food_data/meal/IMG_6446.JPG",
       items: [
         "แซนวิชแฮมชีสไข่ดาว 2 คู่ 750 kcal",
         "ข้าวผัดอเมริกัน 750 kcal",
@@ -155,7 +155,7 @@ export const menuData = {
     {
       meal: "มื้อกลางวัน",
       kcal: "500-600 kcal",
-      img: "/images/food_data/meal/IMG_6329.PNG",
+      img: "/images/food_data/meal/IMG_6442.JPG",
       items: [
         "ข้าวหมูกระเทียมไข่ดาว 600 kcal",
         "ข้าวหมูแดง หมูกรอบ 580 kcal",
@@ -166,7 +166,7 @@ export const menuData = {
     {
       meal: "มื้อว่าง",
       kcal: "300-400 kcal",
-      img: "/images/food_data/meal/IMG_6330.JPG",
+      img: "/images/food_data/meal/IMG_6453.JPG",
       items: [
         "สมูทตี้ข้าวโอ๊ตกล้วยหอม 350 kcal",
         "สมูทตี้อะโวคาโดกล้วยหอม 320 kcal",
@@ -176,7 +176,7 @@ export const menuData = {
     {
       meal: "มื้อเย็น",
       kcal: "400-500 kcal",
-      img: "/images/food_data/meal/IMG_6332.JPG",
+      img: "/images/food_data/meal/IMG_6457.JPG",
       items: [
         "ข้าวผัดอกไก่ + ไข่ 450 kcal",
         "สลัดอกไก่ + ขนมปัง 400 kcal",
