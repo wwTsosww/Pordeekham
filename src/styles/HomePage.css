@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Arial", sans-serif;
 }
 
 .background-home {
@@ -10,127 +11,168 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .main-box {
-  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
 
 .logo {
   background-image: url("../assets/cover_logo.png");
-  width: 250pt;
-  height: 250pt;
+  width: 80%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
-.secon-box1 {
-  background-color: #d2eaf6;
-  border-radius: 50px;
-  width: 600pt;
-  height: 267pt;
-  margin: 0 auto;
+.secon-box {
+  border-radius: 30px;
+  padding: 30px 20px;
+  width: 100%;
+  box-sizing: border-box;
+   margin-top: -30px;
 }
 
 .title-box {
-  width: 200pt;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .title-text {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 48px;
   font-weight: 700;
-  font-family: "Arial", sans-serif;
-  text-align: center;
+  margin: 0;
 }
 
 .welcome-box {
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .welcome-text {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 28px;
   font-weight: 100;
-  font-family: "Arial", sans-serif;
-  text-align: center;
+  margin: 0;
+  margin-top: -10px;
 }
 
 .button-box-home {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 10px;
 }
 
 .button-text-home {
   background-color: #ffffff;
   border: none;
-  padding: 0.1px 250px;
+  padding: 10px 220px;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 38px;
   cursor: pointer;
   transition: 0.3s ease;
   color: #995355;
+  width: auto;
+  max-width: 80%;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .button-text-home:hover {
   background-color: #81bdc5;
 }
 
-.account-box {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.account-text {
-  background: none;
-  border: none;
-  color: #ffffff;
-  text-decoration: underline;
-  font-size: 22px;
-  cursor: pointer;
-  padding: 0;
-}
-
 .button-box-orter {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.button-a,
+.button-b {
+  border: none;
+  border-radius: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 250px;
+  height: 60px;
 }
 
 .button-a {
   background-color: #1f21a6;
   color: white;
-  width: 250px;
-  height: 60px;
-  border: none;
-  border-radius: 30px;
-  font-size: 30px;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
-button.button-a:hover {
+.button-a:hover {
   background-color: #777a2f;
 }
 
 .button-b {
   background-color: #41e26c;
   color: white;
-  width: 250px;
-  height: 60px;
-  border: none;
-  border-radius: 30px;
-  font-size: 30px;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
-button.button-b:hover {
+.button-b:hover {
   background-color: #298b43;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .title-text {
+    font-size: 36px;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+  }
+
+  .button-text-home {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 150px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #995355;
+  width: auto;
+  max-width: 80%;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .button-a,
+  .button-b {
+    font-size: 18px;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+  }
+
+  .button-box-orter {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }

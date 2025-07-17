@@ -9,7 +9,7 @@ function Contact({ onClose }) {
         </button>
         <div className="contact-title-box">
           <h1 className="contact-title">ติดต่อสอบถาม</h1>
-          <div className="contact-second-box1"></div>
+          <div className="contact-second-box1">
         </div>
         <div className="contact-details">
           <h1 className="contact-box">ห้องตรวจโภชนบำบัด โทร.</h1>
@@ -18,6 +18,7 @@ function Contact({ onClose }) {
         <div className="contact-details-1">
           <h1 className="contact-box">โรงพยาบาลภูมิพลอดุลยเดช โทร.</h1>
           <h1 className="contact-mobile">02-534-7000</h1>
+        </div>
         </div>
       </div>
     </div>

@@ -92,3 +92,39 @@
   color: #000;
   margin-top: -20px;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-second-box {
+    width: 95%;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+  }
+
+  .contact-box,
+  .contact-mobile {
+    font-size: 18px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .contact-details,
+  .contact-details-1 {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-exit-button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

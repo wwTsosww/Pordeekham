@@ -102,3 +102,49 @@
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .credits-second-box {
+    width: 95%;
+    height: 95%;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .credits-title {
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .member-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .member-details {
+    min-width: unset;
+    min-height: unset;
+    max-width: 100%;
+    max-height: unset;
+    text-align: center;
+  }
+
+  .member-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .member-details h1 {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .credits-exit-button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
